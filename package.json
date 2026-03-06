@@ -1,0 +1,20 @@
+{
+  "name": "int222",
+  "version": "1.0.0",
+  "description": "This is my class work",
+  "homepage": "https://github.com/Abhijith-Shaju/INT222#readme",
+  "bugs": {
+    "url": "https://github.com/Abhijith-Shaju/INT222/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhijith-Shaju/INT222.git"
+  },
+  "license": "ISC",
+  "author": "Abhijith Shaju",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
