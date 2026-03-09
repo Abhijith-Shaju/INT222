@@ -16,7 +16,7 @@ let studentData = {
     marks: 82 
 }
 
-fs.writeFile("./FileSystem_Module/files/writeSampleObject.txt", JSON.stringify(studentData), "utf-8", (err) =>{
+fs.writeFile("./FileSystem_Module/files/studentData.txt", JSON.stringify(studentData), "utf-8", (err) =>{
     if(err) console.log(err);
     else console.log("Data saved");
 });
