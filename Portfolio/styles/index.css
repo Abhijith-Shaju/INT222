@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Palette */
+    --clr-bg:         #f4f0e8;
+    --clr-surface:    #faf6ee;
+    --clr-card:       #fbf4ea;
+    --clr-ink:        #2e1f14;
+    --clr-ink-muted:  rgba(46, 31, 20, 0.58);
+    --clr-ink-faint:  rgba(46, 31, 20, 0.18);
+    --clr-accent:     #b85c2c;
+    --clr-accent-lt:  #e8c9a8;
+    --clr-warm-mid:   #d4a87a;
+
+    /* Type */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-mono:    'DM Mono', 'Courier New', monospace;
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+    --duration-fast: 180ms;
+    --duration-mid:  320ms;
+    --duration-slow: 750ms;
+}
+
+html {
+    background-color: var(--clr-bg);
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+    font-family: var(--font-display);
+    color: var(--clr-ink);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Focus ring ── */
+:focus-visible {
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* ── Selection ── */
+::selection {
+    background: var(--clr-accent-lt);
+    color: var(--clr-ink);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--clr-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--clr-warm-mid);
+    border-radius: 999px;
+}

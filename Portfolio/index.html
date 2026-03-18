@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijith Shaju — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-inner">
+            <a href="#" class="header-logo" aria-label="Back to top">
+                <span class="logo-initials">AS</span>
+                <span class="logo-name">Abhijith Shaju</span>
+            </a>
+            <nav class="header-nav" aria-label="Primary navigation">
+                <a href="#" class="nav-link" data-section="0">Home</a>
+                <a href="#" class="nav-link" data-section="1">About</a>
+                <a href="#" class="nav-link" data-section="2">Work</a>
+                <a href="#" class="nav-link" data-section="3">Contact</a>
+            </nav>
+            <a href="mailto:abhijithshaju2004@gmail.com" class="header-cta">Let's Talk</a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" type="button">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <nav>
+            <a href="#" class="mobile-nav-link" data-section="0">Home</a>
+            <a href="#" class="mobile-nav-link" data-section="1">About</a>
+            <a href="#" class="mobile-nav-link" data-section="2">Work</a>
+            <a href="#" class="mobile-nav-link" data-section="3">Contact</a>
+        </nav>
+    </div>
+
+    <main id="page-content">
+        <section id="hero-section">
+            <div class="hero-copy">
+                <p class="hero-kicker">Portfolio 2026</p>
+                <h1>Abhijith<br><em>Shaju</em></h1>
+                <p class="hero-text">CS undergrad at LPU building deliberate interfaces, full-stack tools, and open-source software that people actually use.</p>
+                <div class="hero-actions">
+                    <button id="hero-enter" class="hero-button" type="button">Explore Portfolio</button>
+                    <button id="hero-scroll" class="hero-link" type="button">
+                        <span>Scroll Down</span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v12M1 7l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+                <div class="hero-meta">
+                    <div class="hero-meta-item">
+                        <span class="meta-number">8.13</span>
+                        <span class="meta-label">CGPA at LPU</span>
+                    </div>
+                    <div class="hero-meta-divider"></div>
+                    <div class="hero-meta-item">
+                        <span class="meta-number">4+</span>
+                        <span class="meta-label">Projects Shipped</span>
+                    </div>
+                    <div class="hero-meta-divider"></div>
+                    <div class="hero-meta-item">
+                        <span class="meta-number">26+</span>
+                        <span class="meta-label">GitHub Stars</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-preview" aria-hidden="true">
+                <div class="preview-card preview-card-top">
+                    <span class="preview-eyebrow">Currently Building</span>
+                    <span>Full</span>
+                    <span class="preview-sub">Stack</span>
+                </div>
+                <div class="preview-card preview-card-bottom">
+                    <div class="preview-tags">
+                        <span class="preview-tag">React</span>
+                        <span class="preview-tag">Express</span>
+                        <span class="preview-tag">MongoDB</span>
+                    </div>
+                    <span>Projects</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="main">
+            <section id="left-section" class="sections">
+                <div class="section-track left-track">
+                    <article id="section-div-left-1" class="section-div-cards">
+                        <div class="panel-left-content">
+                            <div class="panel-left-deco"><div class="deco-ring deco-ring--lg"></div><div class="deco-ring deco-ring--sm"></div></div>
+                            <span class="card-label">Home</span>
+                            <p class="panel-left-tagline">Based in<br><strong>Punjab, India</strong></p>
+                        </div>
+                    </article>
+                    <article id="section-div-left-2" class="section-div-cards">
+                        <div class="panel-left-content">
+                            <div class="panel-left-deco"><div class="deco-dash"></div><div class="deco-dash deco-dash--short"></div></div>
+                            <span class="card-label">About</span>
+                            <p class="panel-left-tagline">CS Undergrad<br><strong>@ LPU</strong></p>
+                        </div>
+                    </article>
+                    <article id="section-div-left-3" class="section-div-cards">
+                        <div class="panel-left-content">
+                            <div class="work-left-counter" aria-hidden="true"><span>01</span><span>02</span><span>03</span><span>04</span></div>
+                            <span class="card-label">Work</span>
+                            <p class="panel-left-tagline">Selected<br><strong>Projects.</strong></p>
+                        </div>
+                    </article>
+                    <article id="section-div-left-4" class="section-div-cards">
+                        <div class="panel-left-content">
+                            <div class="panel-left-deco"><div class="deco-dot-grid" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                            <span class="card-label">Contact</span>
+                            <p class="panel-left-tagline">Let's<br><strong>Connect.</strong></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="right-section" class="sections">
+                <div class="section-track right-track">
+                    <article id="section-div-right-4" class="section-div-cards panel-content">
+                        <div class="panel-content-inner contact-content">
+                            <h2 class="panel-content-heading">Get in touch</h2>
+                            <p class="panel-content-body">I'm open to internships, freelance projects, and interesting collaborations. If you've got an idea worth building — I'm listening.</p>
+                            <a href="mailto:abhijithshaju2004@gmail.com" class="contact-email-link">
+                                abhijithshaju2004@gmail.com
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </a>
+                            <div class="social-links">
+                                <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="social-link">GitHub</a>
+                                <a href="https://linkedin.com/in/abhijith-shaju" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+                                <a href="tel:+918891240760" class="social-link">+91 88912 40760</a>
+                                <a href="./AbhijithShajuCV.pdf" download="AbhijithShajuCV.pdf" class="social-link cv-download-link">Download CV ↓</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="section-div-right-3" class="section-div-cards panel-content">
+                        <div class="panel-content-inner work-content">
+                            <h2 class="panel-content-heading">Selected Work</h2>
+                            <div class="project-list">
+                                <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="project-item">
+                                    <div class="project-info"><span class="project-num">01</span><div><p class="project-name">Display Zone Manager</p><p class="project-tags">Python · Win32 API · Multithreading · ★ 26+</p></div></div>
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                                <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="project-item">
+                                    <div class="project-info"><span class="project-num">02</span><div><p class="project-name">ShelfWise — My Library</p><p class="project-tags">React · Express · MongoDB · Google Books API</p></div></div>
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                                <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="project-item">
+                                    <div class="project-info"><span class="project-num">03</span><div><p class="project-name">Smart Directory Manager</p><p class="project-tags">Python · MD5 Hashing · MIME · 99% accuracy</p></div></div>
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                                <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="project-item">
+                                    <div class="project-info"><span class="project-num">04</span><div><p class="project-name">FitLife Planner & FitBot</p><p class="project-tags">Vanilla JS · Gemini API · CSS · localStorage</p></div></div>
+                                    <span class="project-arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="section-div-right-2" class="section-div-cards panel-content">
+                        <div class="panel-content-inner about-content">
+                            <h2 class="panel-content-heading">About Me</h2>
+                            <p class="panel-content-body">I'm Abhijith — a CS undergrad at Lovely Professional University (CGPA 8.13) who builds across the full stack. I care about clean architecture, responsive UIs, and software that solves real problems.</p>
+                            <p class="panel-content-body">Top 10 finalist at ARENA Web-A-Thon. Published open-source tools with real users on GitHub.</p>
+                            <div class="skills-grid">
+                                <span class="skill-chip">JavaScript</span><span class="skill-chip">React</span><span class="skill-chip">Express.js</span><span class="skill-chip">Python</span><span class="skill-chip">MongoDB</span><span class="skill-chip">MySQL</span><span class="skill-chip">Tailwind CSS</span><span class="skill-chip">C / C++</span><span class="skill-chip">Java</span><span class="skill-chip">Git & GitHub</span><span class="skill-chip">Google Cloud</span><span class="skill-chip">REST APIs</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="section-div-right-1" class="section-div-cards panel-content">
+                        <div class="panel-content-inner home-content">
+                            <p class="home-hello">Hello, I'm</p>
+                            <h2 class="home-name">Abhijith<br><em>Shaju</em></h2>
+                            <p class="panel-content-body">A CS undergrad crafting full-stack applications and open-source tools — from Windows desktop utilities to MERN web platforms.</p>
+                            <div class="home-availability">
+                                <span class="availability-dot"></span>
+                                <span>Open to internships & opportunities</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div id="scroll-buttons">
+                <button id="nav-up" class="scroll-buttons" type="button" aria-label="Previous section">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
+                    <span class="scroll-dot active"></span><span class="scroll-dot"></span><span class="scroll-dot"></span><span class="scroll-dot"></span>
+                </div>
+                <button id="nav-down" class="scroll-buttons" type="button" aria-label="Next section">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 4v8M4 8l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!-- CTA block -->
+        <div class="footer-cta-block">
+            <div class="footer-available-badge">
+                <span class="availability-dot"></span>
+                Open to internships &amp; opportunities
+            </div>
+            <h2 class="footer-cta-heading">
+                Let's build<br><em>something</em><br>great.
+            </h2>
+            <p class="footer-cta-sub">
+                Whether it's a product, a side project, or just a conversation about ideas —
+                I'm always up for it. Drop me a line.
+            </p>
+        </div>
+
+        <!-- Contact row -->
+        <div class="footer-contact-row">
+            <a href="mailto:abhijithshaju2004@gmail.com" class="footer-email-link">
+                abhijithshaju2004@gmail.com
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="footer-links-col">
+                <div class="footer-social-row">
+                    <a href="https://github.com/Abhijith-Shaju" target="_blank" rel="noopener" class="footer-social-link">GitHub</a>
+                    <a href="https://linkedin.com/in/abhijith-shaju" target="_blank" rel="noopener" class="footer-social-link">LinkedIn</a>
+                    <a href="tel:+918891240760" class="footer-social-link">+91 88912 40760</a>
+                </div>
+                <button class="footer-cv-link" id="footer-cv-download" type="button">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                        <path d="M6.5 1v8M3 6l3.5 3.5L10 6M1 12h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download CV
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-left">
+                <span class="footer-wordmark">Abhijith Shaju</span>
+                <span class="footer-copyright">© 2026 — All rights reserved</span>
+            </div>
+            <div class="footer-bottom-right">
+                <span class="footer-built-with">Designed &amp; built with care</span>
+                <a href="#" class="footer-scroll-top" id="footer-scroll-top" aria-label="Back to top">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
