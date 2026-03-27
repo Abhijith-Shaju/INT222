@@ -1,0 +1,2 @@
+cereate a node js app to set the theme dark or light using cookie concept;
+ insert two buttons with the click of these button the theme should change ot the desired theme;

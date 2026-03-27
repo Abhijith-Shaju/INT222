@@ -1,0 +1,9 @@
+body.light{
+    background-color: beige;
+    color: purple;
+}
+
+body.dark{
+    background-color: darkslategray;
+    color: bisque;
+}
