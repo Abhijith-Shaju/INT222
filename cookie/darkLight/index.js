@@ -16,7 +16,7 @@ app.get("/", (req, res) =>{
         <head>
         <link rel="stylesheet" href="./index.css">
         </head>
-        <body class="${theme}">
+aaaA        <body class="${theme}">
         <h1> choose your theme </h1>
         <a href="/settheme/light"> <button> Light </button> </a>
         <a href="/settheme/dark"> <button> Dark </button> </a>
@@ -28,6 +28,5 @@ app.get("/settheme/:mode", (req, res)=>{
     res.cookie("theme", req.params.mode === 'light' ? "light" : "dark");
     res.redirect("/");
 })
-
 
 app.listen(3000);
