@@ -1,0 +1,1 @@
+using socket.io send  messaevge  form servver toi client every 2 seconds. after the 1-th second, the server should stop messgaes and print the forst 4 sending messsafe;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Side</title>
+</head>
+<body>
+    <ol id="list">
+
+    </ol>
+    <script src="./socket.io/socket.io.js"></script>
+    <script>
+        let socket = io();
+        socket.on('connect', ()=>{
+            console.log("Connect");
+
+            socket.on("clientMsg", (msg) => {
+                let ele = document.createElement('li');
+                ele.innerText = `this is the message from the server : ${msg}`;
+                document.getElementById('list').appendChild(ele);
+            })
+        });
+    </script>
+</body>
+</html>
