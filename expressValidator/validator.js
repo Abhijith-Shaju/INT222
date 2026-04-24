@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended:false}));
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, "validator.html"));
+    
 })
 
 app.post('/submit', [

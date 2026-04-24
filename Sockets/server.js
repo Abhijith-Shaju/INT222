@@ -29,7 +29,4 @@ io.on("connect", (socket) => {
     })
 })
 
-
-
-
 http.listen(3000);
