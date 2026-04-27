@@ -12,3 +12,4 @@ let studentSchema = mongoose.Schema({
 
 let Student = mongoose.model("student", studentSchema);
 
+
