@@ -16,7 +16,7 @@ let Student = mongoose.model("student", studentSchema);
 app.use(express.json());
 
 app.post("/students", async(req, res)=>{
-    let result = await Student.insertOne(req.body);
+    let result = await Student.create(req.body);
     res.json(result);
 })
 

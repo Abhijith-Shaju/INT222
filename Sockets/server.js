@@ -13,7 +13,7 @@ let __filename = fileURLToPath(import.meta.url);
 let __dirname = path.dirname(__filename);
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/client.html"));
+    res.send(path.join(__dirname, "/client.html"));
 });
 
 io.on("connect", (socket) => {
